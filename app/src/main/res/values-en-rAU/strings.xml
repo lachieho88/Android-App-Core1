@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Core1</string>
+    <string name="score">SCORE13</string>
+    <string name="steal">STEAL14</string>
+    <string name="reset">RESET15</string>
+    <string name="points">points</string>
+
+</resources>
