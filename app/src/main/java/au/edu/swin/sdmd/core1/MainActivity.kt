@@ -11,7 +11,6 @@ import android.widget.TextView
 class MainActivity : AppCompatActivity() {
 
     var opPointsResult: Int =0
-    var operator = ""
 
     override fun onStart() {
         super.onStart()
@@ -60,6 +59,8 @@ class MainActivity : AppCompatActivity() {
 
             opPointsResult = savedInstanceState.getInt("points")
             points.text = opPointsResult.toString()
+            setColour(points)
+
         }
 
 
@@ -128,6 +129,7 @@ class MainActivity : AppCompatActivity() {
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putInt("points",opPointsResult)
+
         Log.i("LIFECYCLE", "saveInstanceState $opPointsResult")
     }
 }
